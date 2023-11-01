@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A84C024-BC49-4055-A879-C785C17A014B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaDataInterfaz</RootNamespace>
+    <AssemblyName>CapaDataInterfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAnuladasRep.cs" />
+    <Compile Include="IAnuVlibRep.cs" />
+    <Compile Include="IBocliproRep.cs" />
+    <Compile Include="IBoguiproRep.cs" />
+    <Compile Include="IBorracliproRep.cs" />
+    <Compile Include="IBorraRep.cs" />
+    <Compile Include="ICategoríaRep.cs" />
+    <Compile Include="ICHCancelaRep.cs" />
+    <Compile Include="ICHPagosRep.cs" />
+    <Compile Include="ICLIENRep.cs" />
+    <Compile Include="IComprasRep.cs" />
+    <Compile Include="IContadoRep.cs" />
+    <Compile Include="ICuentaRep.cs" />
+    <Compile Include="IDebitoRep.cs" />
+    <Compile Include="IDeFiguraRep.cs" />
+    <Compile Include="IDeGuiaRep.cs" />
+    <Compile Include="IDeNAbonoRep.cs" />
+    <Compile Include="IDeProformaRep.cs" />
+    <Compile Include="IDeRemisiónRep.cs" />
+    <Compile Include="IDeVLibreRep.cs" />
+    <Compile Include="IECancelaRep.cs" />
+    <Compile Include="IECanletraRep.cs" />
+    <Compile Include="IFACTENTREFECHARep.cs" />
+    <Compile Include="IFactpendRep.cs" />
+    <Compile Include="IFacturasRep.cs" />
+    <Compile Include="IFCarteraRep.cs" />
+    <Compile Include="IFechaRep.cs" />
+    <Compile Include="IGuiaRep.cs" />
+    <Compile Include="ILCarteraRep.cs" />
+    <Compile Include="IMovimientoRep.cs" />
+    <Compile Include="INAbonoRep.cs" />
+    <Compile Include="IProformaRep.cs" />
+    <Compile Include="IProveedoresRep.cs" />
+    <Compile Include="IRemisiónRep.cs" />
+    <Compile Include="IRepcancelaRep.cs" />
+    <Compile Include="IRESULTADRep.cs" />
+    <Compile Include="ITabla1Rep.cs" />
+    <Compile Include="ITablaborRep.cs" />
+    <Compile Include="ITablaConsulta2Rep.cs" />
+    <Compile Include="ITablaconsultaRep.cs" />
+    <Compile Include="ITAbonRep.cs" />
+    <Compile Include="ITDebiRep.cs" />
+    <Compile Include="ITemp3Rep.cs" />
+    <Compile Include="ITempAnulaRep.cs" />
+    <Compile Include="ITempCoRep.cs" />
+    <Compile Include="ITempFactRep.cs" />
+    <Compile Include="ITempfactu2Rep.cs" />
+    <Compile Include="ITempGuiaRep.cs" />
+    <Compile Include="ITEMPORALRep.cs" />
+    <Compile Include="ITEMPRep.cs" />
+    <Compile Include="ITemPVli2Rep.cs" />
+    <Compile Include="ITempVliRep.cs" />
+    <Compile Include="ITemp_2Rep.cs" />
+    <Compile Include="ITemp_4Rep.cs" />
+    <Compile Include="ITGuiaRep.cs" />
+    <Compile Include="ITIENDARep.cs" />
+    <Compile Include="ITletRep.cs" />
+    <Compile Include="ITMarcaRep.cs" />
+    <Compile Include="ITMIDERep.cs" />
+    <Compile Include="ITransporteRep.cs" />
+    <Compile Include="IVENDEDORRep.cs" />
+    <Compile Include="IVLibreRep.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{e3bcca4b-b40b-4f4f-a2c9-d9adb6217a8f}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

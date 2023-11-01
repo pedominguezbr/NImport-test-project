@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFCA379C-1347-4822-8A8D-E541EAA72E7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NImport.My.MyApplication</StartupObject>
+    <RootNamespace>NImport</RootNamespace>
+    <AssemblyName>NImport</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NImport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NImport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm\AnuFact.designer.vb">
+      <DependentUpon>AnuFact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\AnuFact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\CatCompras.designer.vb">
+      <DependentUpon>CatCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\CatCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\Categorias.designer.vb">
+      <DependentUpon>Categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\Categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\ConvierteP.designer.vb">
+      <DependentUpon>ConvierteP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\ConvierteP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\EliBol.designer.vb">
+      <DependentUpon>EliBol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\EliBol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\EliProf.designer.vb">
+      <DependentUpon>EliProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\EliProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\EliVlib.designer.vb">
+      <DependentUpon>EliVlib.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\EliVlib.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrClien.designer.vb">
+      <DependentUpon>FrClien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrClien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrCompras.designer.vb">
+      <DependentUpon>FrCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmBuscarVendedor.Designer.vb">
+      <DependentUpon>FrmBuscarVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmBuscarVendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmBuscarCliente.Designer.vb">
+      <DependentUpon>FrmBuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmBuscarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrmVendedor.designer.vb">
+      <DependentUpon>FrmVendedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrmVendedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\FrTienda.designer.vb">
+      <DependentUpon>FrTienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\FrTienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\NCredit.designer.vb">
+      <DependentUpon>NCredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\NCredit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\PrintBol.designer.vb">
+      <DependentUpon>PrintBol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\PrintBol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\PrintComp.designer.vb">
+      <DependentUpon>PrintComp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\PrintComp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\PrintFact.designer.vb">
+      <DependentUpon>PrintFact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\PrintFact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\PrintProf.designer.vb">
+      <DependentUpon>PrintProf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\PrintProf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\PrintVlib.designer.vb">
+      <DependentUpon>PrintVlib.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\PrintVlib.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\SplashScreen1.designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\System2.designer.vb">
+      <DependentUpon>System2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\System2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm\Ventas2.designer.vb">
+      <DependentUpon>Ventas2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm\Ventas2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ModFunciones.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frm\AnuFact.resx">
+      <DependentUpon>AnuFact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\CatCompras.resx">
+      <DependentUpon>CatCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\Categorias.resx">
+      <DependentUpon>Categorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\ConvierteP.resx">
+      <DependentUpon>ConvierteP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\EliBol.resx">
+      <DependentUpon>EliBol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\EliProf.resx">
+      <DependentUpon>EliProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\EliVlib.resx">
+      <DependentUpon>EliVlib.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrClien.resx">
+      <DependentUpon>FrClien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrCompras.resx">
+      <DependentUpon>FrCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmBuscarVendedor.resx">
+      <DependentUpon>FrmBuscarVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmBuscarCliente.resx">
+      <DependentUpon>FrmBuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrmVendedor.resx">
+      <DependentUpon>FrmVendedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\FrTienda.resx">
+      <DependentUpon>FrTienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\NCredit.resx">
+      <DependentUpon>NCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\PrintBol.resx">
+      <DependentUpon>PrintBol.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\PrintComp.resx">
+      <DependentUpon>PrintComp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\PrintFact.resx">
+      <DependentUpon>PrintFact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\PrintProf.resx">
+      <DependentUpon>PrintProf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\PrintVlib.resx">
+      <DependentUpon>PrintVlib.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\System2.resx">
+      <DependentUpon>System2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm\Ventas2.resx">
+      <DependentUpon>Ventas2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaLogicaInterfaz\CapaLogicaInterfaz.csproj">
+      <Project>{3f565967-336d-40fb-81bb-6c62f17ef41f}</Project>
+      <Name>CapaLogicaInterfaz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{203ecf0b-98c3-49e0-bb77-e94db8719610}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{e3bcca4b-b40b-4f4f-a2c9-d9adb6217a8f}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utis\Utis.csproj">
+      <Project>{c6966dbb-2be1-4023-979d-13204b2434ac}</Project>
+      <Name>Utis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

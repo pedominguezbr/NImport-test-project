@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{203ECF0B-98C3-49E0-BB77-E94DB8719610}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaLogica</RootNamespace>
+    <AssemblyName>CapaLogica</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnuladasApp.cs" />
+    <Compile Include="AnuVlibApp.cs" />
+    <Compile Include="BocliproApp.cs" />
+    <Compile Include="BoguiproApp.cs" />
+    <Compile Include="BorraApp.cs" />
+    <Compile Include="BorracliproApp.cs" />
+    <Compile Include="CategoríaApp.cs" />
+    <Compile Include="CHCancelaApp.cs" />
+    <Compile Include="CHPagosApp.cs" />
+    <Compile Include="CLIENApp.cs" />
+    <Compile Include="ComprasApp.cs" />
+    <Compile Include="ContadoApp.cs" />
+    <Compile Include="CuentaApp.cs" />
+    <Compile Include="DebitoApp.cs" />
+    <Compile Include="DeFiguraApp.cs" />
+    <Compile Include="DeGuiaApp.cs" />
+    <Compile Include="DeNAbonoApp.cs" />
+    <Compile Include="DeProformaApp.cs" />
+    <Compile Include="DeRemisiónApp.cs" />
+    <Compile Include="DeVLibreApp.cs" />
+    <Compile Include="ECancelaApp.cs" />
+    <Compile Include="ECanletraApp.cs" />
+    <Compile Include="FACTENTREFECHAApp.cs" />
+    <Compile Include="FactpendApp.cs" />
+    <Compile Include="FacturasApp.cs" />
+    <Compile Include="FCarteraApp.cs" />
+    <Compile Include="FechaApp.cs" />
+    <Compile Include="GuiaApp.cs" />
+    <Compile Include="LCarteraApp.cs" />
+    <Compile Include="MovimientoApp.cs" />
+    <Compile Include="NAbonoApp.cs" />
+    <Compile Include="ProformaApp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedoresApp.cs" />
+    <Compile Include="RemisiónApp.cs" />
+    <Compile Include="RepcancelaApp.cs" />
+    <Compile Include="RESULTADApp.cs" />
+    <Compile Include="Tabla1App.cs" />
+    <Compile Include="TablaborApp.cs" />
+    <Compile Include="TablaConsulta2App.cs" />
+    <Compile Include="TablaconsultaApp.cs" />
+    <Compile Include="TAbonApp.cs" />
+    <Compile Include="TDebiApp.cs" />
+    <Compile Include="Temp3App.cs" />
+    <Compile Include="TempAnulaApp.cs" />
+    <Compile Include="TEMPApp.cs" />
+    <Compile Include="TempCoApp.cs" />
+    <Compile Include="TempFactApp.cs" />
+    <Compile Include="Tempfactu2App.cs" />
+    <Compile Include="TempGuiaApp.cs" />
+    <Compile Include="TEMPORALApp.cs" />
+    <Compile Include="TemPVli2App.cs" />
+    <Compile Include="TempVliApp.cs" />
+    <Compile Include="Temp_2App.cs" />
+    <Compile Include="Temp_4App.cs" />
+    <Compile Include="TGuiaApp.cs" />
+    <Compile Include="TIENDAApp.cs" />
+    <Compile Include="TletApp.cs" />
+    <Compile Include="TMarcaApp.cs" />
+    <Compile Include="TMIDEApp.cs" />
+    <Compile Include="TransporteApp.cs" />
+    <Compile Include="VENDEDORApp.cs" />
+    <Compile Include="VLibreApp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDataInterfaz\CapaDataInterfaz.csproj">
+      <Project>{6a84c024-bc49-4055-a879-c785c17a014b}</Project>
+      <Name>CapaDataInterfaz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaData\CapaData.csproj">
+      <Project>{46fe6f46-ecc6-47b4-9a16-66f0ab5bebff}</Project>
+      <Name>CapaData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogicaInterfaz\CapaLogicaInterfaz.csproj">
+      <Project>{3f565967-336d-40fb-81bb-6c62f17ef41f}</Project>
+      <Name>CapaLogicaInterfaz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{e3bcca4b-b40b-4f4f-a2c9-d9adb6217a8f}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
